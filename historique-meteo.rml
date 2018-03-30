@@ -54,7 +54,87 @@
             rr:predicate <https://w3id.org/saref#Temperature> ],
 
         [ rr:objectMap [ rml:reference "$.pmer" ] ;
-            rr:predicate <http://dbpedia.org/ontology/Sea#Pressure> ].
+            rr:predicate <http://dbpedia.org/ontology/Sea#Pressure> ],
+
+         [ rr:objectMap [ rml:reference "$.tn12" ] ;
+            rr:predicate <http://dbpedia.org/ontology/Galaxy/minimumTemperature#12> ],
+
+        [ rr:objectMap [ rml:reference "$.vv" ] ;
+            rr:predicate <http://online-presence.net/opo/ns#Visibility> ],
+
+        [ rr:objectMap [ rml:reference "$.rr1" ] ;
+            rr:predicate <http://purl.org/iot/vocab/m3-lite#PrecipitationSensor#1> ],
+
+        [ rr:objectMap [ rml:reference "$.rr3" ] ;
+            rr:predicate <http://purl.org/iot/vocab/m3-lite#PrecipitationSensor#3> ],
+
+        [ rr:objectMap [ rml:reference "$.rr6" ] ;
+            rr:predicate <http://purl.org/iot/vocab/m3-lite#PrecipitationSensor#6> ],
+
+        [ rr:objectMap [ rml:reference "$.rr12" ] ;
+            rr:predicate <http://purl.org/iot/vocab/m3-lite#PrecipitationSensor#12> ],
+
+        [ rr:objectMap [ rml:reference "$.rr24" ] ;
+            rr:predicate <http://purl.org/iot/vocab/m3-lite#PrecipitationSensor#24> ],
+
+        [ rr:objectMap [ rml:reference "$.tend24" ] ;
+            rr:predicate <http://purl.org/iot/vocab/m3-lite#PressureSensor#24> ],
+
+        [ rr:objectMap [ rml:reference "$.per" ] ;
+            rr:predicate <http://purl.org/iot/vocab/m3-lite#WindSpeedSensor> ],
+
+        [ rr:objectMap [ rml:reference "$.tend" ] ;
+            rr:predicate <http://purl.org/iot/vocab/m3-lite#PressureSensor#3> ],
+
+        [ rr:objectMap [ rml:reference "$.rafper" ] ;
+            rr:predicate <http://purl.org/iot/vocab/m3-lite#WindSpeedSensor> ],
+
+        [ rr:objectMap [ rml:reference "$.td" ] ;
+            rr:predicate <http://purl.org/iot/vocab/m3-lite#DewPoint> ],
+
+        [ rr:objectMap [ rml:reference "$.nnuage1" ] ;
+            rr:predicate <http://purl.org/iot/vocab/m3-lite#CloudCoverSensor> ],
+
+
+        [ rr:objectMap [ rml:reference "$.type_de_tendance_barometrique" ] ;
+            rr:predicate <http://purl.org/healthcarevocab/v1#SensorTemperature> ], #PAS SUR
+
+        [ rr:objectMap [ rml:reference "$.tx12" ] ;
+            rr:predicate <https://w3id.org/saref#Temperature#12> ],
+
+        [ rr:objectMap [ rml:reference "$.tminsol" ] ;
+            rr:predicate <https://w3id.org/saref#Temperature#sol12> ],
+
+        [ rr:objectMap [ rml:reference "$.dd" ] ;
+            rr:predicate <http://purl.org/iot/vocab/m3-lite#WindDirection> ],
+
+        [ rr:objectMap [ rml:reference "$.ww" ] ;
+            rr:predicate <https://w3id.org/eepsa#WeatherReport> ],
+
+        [ rr:objectMap [ rml:reference "$.cod_tend" ] ;
+            rr:predicate <http://dati.isprambiente.it/ontology/core#Barometer> ],
+
+        [ rr:objectMap [ rml:reference "$.ff" ] ;
+            rr:predicate <http://purl.org/iot/vocab/m3-lite#WindSpeed> ],
+
+        [ rr:objectMap [ rml:reference "$.hnuage1" ] ;
+            rr:predicate <http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#height> ],
+
+        [ rr:objectMap [ rml:reference "$.raf10" ] ;
+            rr:predicate <http://www.w3.org/2006/time#minutes> ],
+
+        [ rr:objectMap [ rml:reference "$.t" ] ;
+            rr:predicate <http://vcharpenay.github.io/hto/hto.xml#Temperature> ],
+
+        [ rr:objectMap [ rml:reference "$.u" ] ;
+            rr:predicate <http://purl.oclc.org/NET/ssnx/cf/cf-feature#Humidity> ], 
+
+        [ rr:objectMap [ rml:reference "$.hbas" ] ;
+            rr:predicate <http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#height> ],
+
+        [ rr:objectMap [ rml:reference "$.nbas" ] ;
+            rr:predicate <http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#height> ].
+
 
 
                     
