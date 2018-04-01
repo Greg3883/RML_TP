@@ -1,557 +1,510 @@
-{
-"nhits":1364759,
-"parameters":{
-"dataset":[
-"donnees-synop-essentielles-omm@public"
-],
-"timezone":"UTC",
-"rows":10,
-"sort":[
-"date"
-],
-"format":"json",
-"facet":[
-"date",
-"temps_present",
-"nom"
+[
+
+    {
+        "datasetid":"donnees-synop-essentielles-omm@public",
+        "recordid":"bbb84aeac9634f231c92fbbd15f3c168f46aa5e8",
+        "fields":{
+            "ht_neige":"0.000000",
+            "tn12":"271.950000",
+            "numer_sta":"07535",
+            "vv":"20000",
+            "etat_sol":"0",
+            "rr3":0,
+            "rr24":0,
+            "tend24":-480,
+            "per":"-10",
+            "tend":-90,
+            "temps_present":"On n’a pas observé d’évolution des nuages ou on n’a pas pu suivre cette évolution",
+            "rafper":"7.800000",
+            "type_de_tendance_barometrique":"En baisse, puis en hausse, la pression atmosphérique est la même ou plus basse que trois heures auparavant",
+            "td":270.85,
+            "nnuage1":"1",
+            "pres":98890,
+            "pmer":"102060",
+            "nom":"GOURDON",
+            "tx12":"283.150000",
+            "tminsol":"272.350000",
+            "dd":310,
+            "ww":"0",
+            "cod_tend":5,
+            "ff":2.8,
+            "date":"2018-03-22T18:00:00+00:00",
+            "rr6":0,
+            "hnuage1":"4080",
+            "coordonnees":[
+                44.745,
+                1.396667
+            ]
+            ,
+            "raf10":"6.200000",
+            "rr1":0,
+            "rr12":0,
+            "u":50,
+            "t":280.65,
+            "hbas":"4080",
+            "nbas":"2"
+        }
+        ,
+        "geometry":{
+            "type":"Point",
+            "coordinates":[
+                1.396667,
+                44.745
+            ]
+        }
+        ,
+        "record_timestamp":"2018-03-22T20:18:19+00:00"
+    }
+    ,
+    {
+        "datasetid":"donnees-synop-essentielles-omm@public",
+        "recordid":"1f71255f2fc648a0442e91ecf860dadb9a30fd90",
+        "fields":{
+            "ht_neige":"0.000000",
+            "tn12":"274.550000",
+            "numer_sta":"07577",
+            "vv":"20000",
+            "etat_sol":"0",
+            "rr3":0,
+            "rr24":0,
+            "tend24":-630,
+            "per":"-10",
+            "tend":-50,
+            "temps_present":"On n’a pas observé d’évolution des nuages ou on n’a pas pu suivre cette évolution",
+            "rr1":0,
+            "type_de_tendance_barometrique":"En baisse, puis en hausse, la pression atmosphérique est la même ou plus basse que trois heures auparavant",
+            "td":269.05,
+            "pres":100560,
+            "pmer":"101460",
+            "nom":"MONTELIMAR",
+            "tx12":"283.650000",
+            "tminsol":"273.050000",
+            "dd":360,
+            "ww":"0",
+            "cod_tend":5,
+            "ff":7.3,
+            "date":"2018-03-22T18:00:00+00:00",
+            "rr6":0,
+            "coordonnees":[
+                44.581167,
+                4.733
+            ]
+            ,
+            "raf10":"17.400000",
+            "rafper":"22.300000",
+            "rr12":0,
+            "u":40,
+            "t":281.95
+        }
+        ,
+        "geometry":{
+            "type":"Point",
+            "coordinates":[
+                4.733,
+                44.581167
+            ]
+        }
+        ,
+        "record_timestamp":"2018-03-22T20:18:19+00:00"
+    }
+    ,
+    {
+        "datasetid":"donnees-synop-essentielles-omm@public",
+        "recordid":"f6ce10187f87da939c67c3b655d91cd99bda7cc0",
+        "fields":{
+            "ht_neige":"0.000000",
+            "tn12":"279.850000",
+            "numer_sta":"07790",
+            "vv":"58190",
+            "rr3":0,
+            "rr24":0,
+            "tend24":-980,
+            "per":"-10",
+            "tend":-150,
+            "temps_present":"On n’a pas observé d’évolution des nuages ou on n’a pas pu suivre cette évolution",
+            "rr1":0,
+            "tminsol":"278.150000",
+            "td":270.65,
+            "pres":100430,
+            "pmer":"100580",
+            "nom":"BASTIA",
+            "tx12":"284.350000",
+            "type_de_tendance_barometrique":"En baisse, puis stationnaire, ou en baisse, puis en baisse plus lente",
+            "dd":290,
+            "ww":"0",
+            "cod_tend":6,
+            "ff":5,
+            "date":"2018-03-22T18:00:00+00:00",
+            "rr6":0,
+            "coordonnees":[
+                42.540667,
+                9.485167
+            ]
+            ,
+            "raf10":"10.100000",
+            "rafper":"11.500000",
+            "rr12":0,
+            "u":44,
+            "t":282.25,
+            "nbas":"0"
+        }
+        ,
+        "geometry":{
+            "type":"Point",
+            "coordinates":[
+                9.485167,
+                42.540667
+            ]
+        }
+        ,
+        "record_timestamp":"2018-03-22T20:18:19+00:00"
+    }
+    ,
+    {
+        "datasetid":"donnees-synop-essentielles-omm@public",
+        "recordid":"e871fb5edf87cc5146011d591f34e5591ed163e1",
+        "fields":{
+            "tn12":"268.250000",
+            "numer_sta":"07591",
+            "vv":"20000",
+            "rr3":0,
+            "rr24":0,
+            "tend24":-630,
+            "per":"-10",
+            "tend":-20,
+            "temps_present":"On n’a pas observé d’évolution des nuages ou on n’a pas pu suivre cette évolution",
+            "rr1":0,
+            "tminsol":"267.050000",
+            "td":266.15,
+            "pres":90790,
+            "nom":"EMBRUN",
+            "tx12":"282.650000",
+            "type_de_tendance_barometrique":"En baisse, puis en hausse, la pression atmosphérique est la même ou plus basse que trois heures auparavant",
+            "dd":190,
+            "ww":"0",
+            "cod_tend":5,
+            "ff":1.3,
+            "date":"2018-03-22T18:00:00+00:00",
+            "rr6":0,
+            "coordonnees":[
+                44.565667,
+                6.502333
+            ]
+            ,
+            "raf10":"2.900000",
+            "rafper":"5.700000",
+            "rr12":0,
+            "u":41,
+            "t":278.35,
+            "geop":"721"
+        }
+        ,
+        "geometry":{
+            "type":"Point",
+            "coordinates":[
+                6.502333,
+                44.565667
+            ]
+        }
+        ,
+        "record_timestamp":"2018-03-22T20:18:19+00:00"
+    }
+    ,
+    {
+        "datasetid":"donnees-synop-essentielles-omm@public",
+        "recordid":"af3c5e772eed68e6dcc25198d80ad1a7a32c4391",
+        "fields":{
+            "tn12":"278.050000",
+            "numer_sta":"07207",
+            "w1":"2",
+            "rr3":0,
+            "rr24":0,
+            "tend24":-1120,
+            "per":"-10",
+            "tend":-230,
+            "rr1":0,
+            "td":274.75,
+            "pres":101590,
+            "pmer":"102120",
+            "nom":"BELLE ILE-LE TALUT",
+            "tx12":"282.350000",
+            "type_de_tendance_barometrique":"En baisse, puis stationnaire, ou en baisse, puis en baisse plus lente",
+            "dd":250,
+            "cod_tend":6,
+            "ff":6.4,
+            "date":"2018-03-22T18:00:00+00:00",
+            "rr6":0,
+            "coordonnees":[
+                47.294333,
+                -3.218333
+            ]
+            ,
+            "raf10":"10.300000",
+            "rafper":"11.300000",
+            "rr12":0,
+            "u":62,
+            "t":281.65,
+            "temps_passe_1":"Nuages couvrant plus de la moitié du ciel pendant toute la période considérée"
+        }
+        ,
+        "geometry":{
+            "type":"Point",
+            "coordinates":[
+                -3.218333,
+                47.294333
+            ]
+        }
+        ,
+        "record_timestamp":"2018-03-22T20:18:19+00:00"
+    }
+    ,
+    {
+        "datasetid":"donnees-synop-essentielles-omm@public",
+        "recordid":"c95749d6f6d73aeb577944603fba38c9af5d5acf",
+        "fields":{
+            "tn12":"272.950000",
+            "w1":"6",
+            "numer_sta":"71805",
+            "w2":"6",
+            "vv":"13580",
+            "rr3":0.4,
+            "rr24":0.4,
+            "tend24":-570,
+            "per":"-10",
+            "tend":-350,
+            "temps_present":"On n’a pas observé d’évolution des nuages ou on n’a pas pu suivre cette évolution",
+            "rafper":"22.400000",
+            "tminsol":"274.350000",
+            "td":270.85,
+            "nnuage1":"8",
+            "pres":100960,
+            "pmer":"101050",
+            "nom":"ST-PIERRE",
+            "tx12":"275.850000",
+            "type_de_tendance_barometrique":"Stationnaire ou en hausse, puis en baisse, ou en baisse, puis en baisse plus rapide",
+            "dd":80,
+            "ww":"0",
+            "cod_tend":8,
+            "ff":15.4,
+            "date":"2018-03-22T18:00:00+00:00",
+            "rr6":0.4,
+            "hnuage1":"450",
+            "coordonnees":[
+                46.766333,
+                -56.179167
+            ]
+            ,
+            "raf10":"22.200000",
+            "rr1":0.4,
+            "rr12":0.4,
+            "n":"100",
+            "u":85,
+            "t":273.05,
+            "hbas":"450",
+            "nbas":"8",
+            "temps_passe_1":"Pluie"
+        }
+        ,
+        "geometry":{
+            "type":"Point",
+            "coordinates":[
+                -56.179167,
+                46.766333
+            ]
+        }
+        ,
+        "record_timestamp":"2018-03-22T20:18:19+00:00"
+    }
+    ,
+    {
+        "datasetid":"donnees-synop-essentielles-omm@public",
+        "recordid":"004acac73d45fce31e62736f0e5a829ce7fa350d",
+        "fields":{
+            "ht_neige":"0.000000",
+            "tn12":"268.250000",
+            "numer_sta":"07460",
+            "vv":"35000",
+            "rr3":0,
+            "per":"-10",
+            "tend":-70,
+            "temps_present":"On n’a pas observé d’évolution des nuages ou on n’a pas pu suivre cette évolution",
+            "td":270.95,
+            "pres":98020,
+            "pmer":"101980",
+            "nom":"CLERMONT-FD",
+            "tx12":"281.650000",
+            "type_de_tendance_barometrique":"En baisse, puis stationnaire, ou en baisse, puis en baisse plus lente",
+            "dd":360,
+            "ww":"0",
+            "cod_tend":6,
+            "ff":4.6,
+            "date":"2018-03-22T18:00:00+00:00",
+            "coordonnees":[
+                45.786833,
+                3.149333
+            ]
+            ,
+            "rafper":"8.700000",
+            "rr12":0,
+            "n":"100",
+            "u":56,
+            "t":279.05,
+            "hbas":"1250"
+        }
+        ,
+        "geometry":{
+            "type":"Point",
+            "coordinates":[
+                3.149333,
+                45.786833
+            ]
+        }
+        ,
+        "record_timestamp":"2018-03-22T20:18:19+00:00"
+    }
+    ,
+    {
+        "datasetid":"donnees-synop-essentielles-omm@public",
+        "recordid":"855b51dcde171a044ba71dab9b2b81cf97104af7",
+        "fields":{
+            "ht_neige":"0.000000",
+            "tn12":"271.050000",
+            "numer_sta":"07558",
+            "vv":"20000",
+            "rr3":0,
+            "rr24":0,
+            "tend24":-390,
+            "per":"-10",
+            "tend":-70,
+            "temps_present":"On n’a pas observé d’évolution des nuages ou on n’a pas pu suivre cette évolution",
+            "rr1":0,
+            "tminsol":"270.550000",
+            "td":268.95,
+            "pres":93220,
+            "pmer":"101670",
+            "nom":"MILLAU",
+            "tx12":"279.650000",
+            "type_de_tendance_barometrique":"En baisse, puis en hausse, la pression atmosphérique est la même ou plus basse que trois heures auparavant",
+            "dd":310,
+            "ww":"0",
+            "cod_tend":5,
+            "ff":7.8,
+            "date":"2018-03-22T18:00:00+00:00",
+            "rr6":0,
+            "coordonnees":[
+                44.1185,
+                3.0195
+            ]
+            ,
+            "raf10":"11.100000",
+            "rafper":"15.700000",
+            "rr12":0,
+            "u":53,
+            "t":277.75
+        }
+        ,
+        "geometry":{
+            "type":"Point",
+            "coordinates":[
+                3.0195,
+                44.1185
+            ]
+        }
+        ,
+        "record_timestamp":"2018-03-22T20:18:19+00:00"
+    }
+    ,
+    {
+        "datasetid":"donnees-synop-essentielles-omm@public",
+        "recordid":"499bfb1da9beebf5c42b155272a6b10b9550332c",
+        "fields":{
+            "ht_neige":"0.000000",
+            "tn12":"277.950000",
+            "numer_sta":"07747",
+            "vv":"50870",
+            "etat_sol":"0",
+            "rr3":0,
+            "rr24":0,
+            "tend24":-540,
+            "per":"-10",
+            "tend":-30,
+            "temps_present":"On n’a pas observé d’évolution des nuages ou on n’a pas pu suivre cette évolution",
+            "rr1":0,
+            "type_de_tendance_barometrique":"En baisse, puis en hausse, la pression atmosphérique est la même ou plus basse que trois heures auparavant",
+            "td":268.25,
+            "pres":101030,
+            "pmer":"101570",
+            "nom":"PERPIGNAN",
+            "tx12":"285.750000",
+            "tminsol":"277.950000",
+            "dd":320,
+            "ww":"0",
+            "cod_tend":5,
+            "ff":10.3,
+            "date":"2018-03-22T18:00:00+00:00",
+            "rr6":0,
+            "coordonnees":[
+                42.737167,
+                2.872833
+            ]
+            ,
+            "raf10":"19.500000",
+            "rafper":"21.300000",
+            "rr12":0,
+            "u":34,
+            "t":283.45,
+            "nbas":"0"
+        }
+        ,
+        "geometry":{
+            "type":"Point",
+            "coordinates":[
+                2.872833,
+                42.737167
+            ]
+        }
+        ,
+        "record_timestamp":"2018-03-22T20:18:19+00:00"
+    }
+    ,
+    {
+        "datasetid":"donnees-synop-essentielles-omm@public",
+        "recordid":"d9bdf69fc6d8b73d5d9928602e448f1f0620822a",
+        "fields":{
+            "pmer":"101260",
+            "rr12":0,
+            "numer_sta":"61998",
+            "type_de_tendance_barometrique":"Stationnaire ou en hausse, puis en baisse, ou en baisse, puis en baisse plus rapide",
+            "dd":10,
+            "per":"-10",
+            "tx12":"290.250000",
+            "cod_tend":8,
+            "pres":100900,
+            "u":85,
+            "rafper":"17.500000",
+            "ff":12.9,
+            "date":"2018-03-22T18:00:00+00:00",
+            "nom":"KERGUELEN",
+            "td":280.15,
+            "tend":-390,
+            "coordonnees":[
+                -49.352333,
+                70.243333
+            ]
+            ,
+            "rr1":0,
+            "t":282.55
+        }
+        ,
+        "geometry":{
+            "type":"Point",
+            "coordinates":[
+                70.243333,
+                -49.352333
+            ]
+        }
+        ,
+        "record_timestamp":"2018-03-22T20:18:19+00:00"
+    }
+
 ]
-},
-"records":[
-{
-"datasetid":"donnees-synop-essentielles-omm@public",
-"recordid":"bbb84aeac9634f231c92fbbd15f3c168f46aa5e8",
-"fields":{
-"ht_neige":"0.000000",
-"tn12":"271.950000",
-"numer_sta":"07535",
-"vv":"20000",
-"etat_sol":"0",
-"rr3":0,
-"rr24":0,
-"tend24":-480,
-"per":"-10",
-"tend":-90,
-"temps_present":"On n’a pas observé d’évolution des nuages ou on n’a pas pu suivre cette évolution",
-"rafper":"7.800000",
-"type_de_tendance_barometrique":"En baisse, puis en hausse, la pression atmosphérique est la même ou plus basse que trois heures auparavant",
-"td":270.85,
-"nnuage1":"1",
-"pres":98890,
-"pmer":"102060",
-"nom":"GOURDON",
-"tx12":"283.150000",
-"tminsol":"272.350000",
-"dd":310,
-"ww":"0",
-"cod_tend":5,
-"ff":2.8,
-"date":"2018-03-22T18:00:00+00:00",
-"rr6":0,
-"hnuage1":"4080",
-"coordonnees":[
-44.745,
-1.396667
-],
-"raf10":"6.200000",
-"rr1":0,
-"rr12":0,
-"u":50,
-"t":280.65,
-"hbas":"4080",
-"nbas":"2"
-},
-"geometry":{
-"type":"Point",
-"coordinates":[
-1.396667,
-44.745
-]
-},
-"record_timestamp":"2018-03-22T20:18:19+00:00"
-},
-{
-"datasetid":"donnees-synop-essentielles-omm@public",
-"recordid":"1f71255f2fc648a0442e91ecf860dadb9a30fd90",
-"fields":{
-"ht_neige":"0.000000",
-"tn12":"274.550000",
-"numer_sta":"07577",
-"vv":"20000",
-"etat_sol":"0",
-"rr3":0,
-"rr24":0,
-"tend24":-630,
-"per":"-10",
-"tend":-50,
-"temps_present":"On n’a pas observé d’évolution des nuages ou on n’a pas pu suivre cette évolution",
-"rr1":0,
-"type_de_tendance_barometrique":"En baisse, puis en hausse, la pression atmosphérique est la même ou plus basse que trois heures auparavant",
-"td":269.05,
-"pres":100560,
-"pmer":"101460",
-"nom":"MONTELIMAR",
-"tx12":"283.650000",
-"tminsol":"273.050000",
-"dd":360,
-"ww":"0",
-"cod_tend":5,
-"ff":7.3,
-"date":"2018-03-22T18:00:00+00:00",
-"rr6":0,
-"coordonnees":[
-44.581167,
-4.733
-],
-"raf10":"17.400000",
-"rafper":"22.300000",
-"rr12":0,
-"u":40,
-"t":281.95
-},
-"geometry":{
-"type":"Point",
-"coordinates":[
-4.733,
-44.581167
-]
-},
-"record_timestamp":"2018-03-22T20:18:19+00:00"
-},
-{
-"datasetid":"donnees-synop-essentielles-omm@public",
-"recordid":"f6ce10187f87da939c67c3b655d91cd99bda7cc0",
-"fields":{
-"ht_neige":"0.000000",
-"tn12":"279.850000",
-"numer_sta":"07790",
-"vv":"58190",
-"rr3":0,
-"rr24":0,
-"tend24":-980,
-"per":"-10",
-"tend":-150,
-"temps_present":"On n’a pas observé d’évolution des nuages ou on n’a pas pu suivre cette évolution",
-"rr1":0,
-"tminsol":"278.150000",
-"td":270.65,
-"pres":100430,
-"pmer":"100580",
-"nom":"BASTIA",
-"tx12":"284.350000",
-"type_de_tendance_barometrique":"En baisse, puis stationnaire, ou en baisse, puis en baisse plus lente",
-"dd":290,
-"ww":"0",
-"cod_tend":6,
-"ff":5,
-"date":"2018-03-22T18:00:00+00:00",
-"rr6":0,
-"coordonnees":[
-42.540667,
-9.485167
-],
-"raf10":"10.100000",
-"rafper":"11.500000",
-"rr12":0,
-"u":44,
-"t":282.25,
-"nbas":"0"
-},
-"geometry":{
-"type":"Point",
-"coordinates":[
-9.485167,
-42.540667
-]
-},
-"record_timestamp":"2018-03-22T20:18:19+00:00"
-},
-{
-"datasetid":"donnees-synop-essentielles-omm@public",
-"recordid":"e871fb5edf87cc5146011d591f34e5591ed163e1",
-"fields":{
-"tn12":"268.250000",
-"numer_sta":"07591",
-"vv":"20000",
-"rr3":0,
-"rr24":0,
-"tend24":-630,
-"per":"-10",
-"tend":-20,
-"temps_present":"On n’a pas observé d’évolution des nuages ou on n’a pas pu suivre cette évolution",
-"rr1":0,
-"tminsol":"267.050000",
-"td":266.15,
-"pres":90790,
-"nom":"EMBRUN",
-"tx12":"282.650000",
-"type_de_tendance_barometrique":"En baisse, puis en hausse, la pression atmosphérique est la même ou plus basse que trois heures auparavant",
-"dd":190,
-"ww":"0",
-"cod_tend":5,
-"ff":1.3,
-"date":"2018-03-22T18:00:00+00:00",
-"rr6":0,
-"coordonnees":[
-44.565667,
-6.502333
-],
-"raf10":"2.900000",
-"rafper":"5.700000",
-"rr12":0,
-"u":41,
-"t":278.35,
-"geop":"721"
-},
-"geometry":{
-"type":"Point",
-"coordinates":[
-6.502333,
-44.565667
-]
-},
-"record_timestamp":"2018-03-22T20:18:19+00:00"
-},
-{
-"datasetid":"donnees-synop-essentielles-omm@public",
-"recordid":"af3c5e772eed68e6dcc25198d80ad1a7a32c4391",
-"fields":{
-"tn12":"278.050000",
-"numer_sta":"07207",
-"w1":"2",
-"rr3":0,
-"rr24":0,
-"tend24":-1120,
-"per":"-10",
-"tend":-230,
-"rr1":0,
-"td":274.75,
-"pres":101590,
-"pmer":"102120",
-"nom":"BELLE ILE-LE TALUT",
-"tx12":"282.350000",
-"type_de_tendance_barometrique":"En baisse, puis stationnaire, ou en baisse, puis en baisse plus lente",
-"dd":250,
-"cod_tend":6,
-"ff":6.4,
-"date":"2018-03-22T18:00:00+00:00",
-"rr6":0,
-"coordonnees":[
-47.294333,
--3.218333
-],
-"raf10":"10.300000",
-"rafper":"11.300000",
-"rr12":0,
-"u":62,
-"t":281.65,
-"temps_passe_1":"Nuages couvrant plus de la moitié du ciel pendant toute la période considérée"
-},
-"geometry":{
-"type":"Point",
-"coordinates":[
--3.218333,
-47.294333
-]
-},
-"record_timestamp":"2018-03-22T20:18:19+00:00"
-},
-{
-"datasetid":"donnees-synop-essentielles-omm@public",
-"recordid":"c95749d6f6d73aeb577944603fba38c9af5d5acf",
-"fields":{
-"tn12":"272.950000",
-"w1":"6",
-"numer_sta":"71805",
-"w2":"6",
-"vv":"13580",
-"rr3":0.4,
-"rr24":0.4,
-"tend24":-570,
-"per":"-10",
-"tend":-350,
-"temps_present":"On n’a pas observé d’évolution des nuages ou on n’a pas pu suivre cette évolution",
-"rafper":"22.400000",
-"tminsol":"274.350000",
-"td":270.85,
-"nnuage1":"8",
-"pres":100960,
-"pmer":"101050",
-"nom":"ST-PIERRE",
-"tx12":"275.850000",
-"type_de_tendance_barometrique":"Stationnaire ou en hausse, puis en baisse, ou en baisse, puis en baisse plus rapide",
-"dd":80,
-"ww":"0",
-"cod_tend":8,
-"ff":15.4,
-"date":"2018-03-22T18:00:00+00:00",
-"rr6":0.4,
-"hnuage1":"450",
-"coordonnees":[
-46.766333,
--56.179167
-],
-"raf10":"22.200000",
-"rr1":0.4,
-"rr12":0.4,
-"n":"100",
-"u":85,
-"t":273.05,
-"hbas":"450",
-"nbas":"8",
-"temps_passe_1":"Pluie"
-},
-"geometry":{
-"type":"Point",
-"coordinates":[
--56.179167,
-46.766333
-]
-},
-"record_timestamp":"2018-03-22T20:18:19+00:00"
-},
-{
-"datasetid":"donnees-synop-essentielles-omm@public",
-"recordid":"004acac73d45fce31e62736f0e5a829ce7fa350d",
-"fields":{
-"ht_neige":"0.000000",
-"tn12":"268.250000",
-"numer_sta":"07460",
-"vv":"35000",
-"rr3":0,
-"per":"-10",
-"tend":-70,
-"temps_present":"On n’a pas observé d’évolution des nuages ou on n’a pas pu suivre cette évolution",
-"td":270.95,
-"pres":98020,
-"pmer":"101980",
-"nom":"CLERMONT-FD",
-"tx12":"281.650000",
-"type_de_tendance_barometrique":"En baisse, puis stationnaire, ou en baisse, puis en baisse plus lente",
-"dd":360,
-"ww":"0",
-"cod_tend":6,
-"ff":4.6,
-"date":"2018-03-22T18:00:00+00:00",
-"coordonnees":[
-45.786833,
-3.149333
-],
-"rafper":"8.700000",
-"rr12":0,
-"n":"100",
-"u":56,
-"t":279.05,
-"hbas":"1250"
-},
-"geometry":{
-"type":"Point",
-"coordinates":[
-3.149333,
-45.786833
-]
-},
-"record_timestamp":"2018-03-22T20:18:19+00:00"
-},
-{
-"datasetid":"donnees-synop-essentielles-omm@public",
-"recordid":"855b51dcde171a044ba71dab9b2b81cf97104af7",
-"fields":{
-"ht_neige":"0.000000",
-"tn12":"271.050000",
-"numer_sta":"07558",
-"vv":"20000",
-"rr3":0,
-"rr24":0,
-"tend24":-390,
-"per":"-10",
-"tend":-70,
-"temps_present":"On n’a pas observé d’évolution des nuages ou on n’a pas pu suivre cette évolution",
-"rr1":0,
-"tminsol":"270.550000",
-"td":268.95,
-"pres":93220,
-"pmer":"101670",
-"nom":"MILLAU",
-"tx12":"279.650000",
-"type_de_tendance_barometrique":"En baisse, puis en hausse, la pression atmosphérique est la même ou plus basse que trois heures auparavant",
-"dd":310,
-"ww":"0",
-"cod_tend":5,
-"ff":7.8,
-"date":"2018-03-22T18:00:00+00:00",
-"rr6":0,
-"coordonnees":[
-44.1185,
-3.0195
-],
-"raf10":"11.100000",
-"rafper":"15.700000",
-"rr12":0,
-"u":53,
-"t":277.75
-},
-"geometry":{
-"type":"Point",
-"coordinates":[
-3.0195,
-44.1185
-]
-},
-"record_timestamp":"2018-03-22T20:18:19+00:00"
-},
-{
-"datasetid":"donnees-synop-essentielles-omm@public",
-"recordid":"499bfb1da9beebf5c42b155272a6b10b9550332c",
-"fields":{
-"ht_neige":"0.000000",
-"tn12":"277.950000",
-"numer_sta":"07747",
-"vv":"50870",
-"etat_sol":"0",
-"rr3":0,
-"rr24":0,
-"tend24":-540,
-"per":"-10",
-"tend":-30,
-"temps_present":"On n’a pas observé d’évolution des nuages ou on n’a pas pu suivre cette évolution",
-"rr1":0,
-"type_de_tendance_barometrique":"En baisse, puis en hausse, la pression atmosphérique est la même ou plus basse que trois heures auparavant",
-"td":268.25,
-"pres":101030,
-"pmer":"101570",
-"nom":"PERPIGNAN",
-"tx12":"285.750000",
-"tminsol":"277.950000",
-"dd":320,
-"ww":"0",
-"cod_tend":5,
-"ff":10.3,
-"date":"2018-03-22T18:00:00+00:00",
-"rr6":0,
-"coordonnees":[
-42.737167,
-2.872833
-],
-"raf10":"19.500000",
-"rafper":"21.300000",
-"rr12":0,
-"u":34,
-"t":283.45,
-"nbas":"0"
-},
-"geometry":{
-"type":"Point",
-"coordinates":[
-2.872833,
-42.737167
-]
-},
-"record_timestamp":"2018-03-22T20:18:19+00:00"
-},
-{
-"datasetid":"donnees-synop-essentielles-omm@public",
-"recordid":"d9bdf69fc6d8b73d5d9928602e448f1f0620822a",
-"fields":{
-"pmer":"101260",
-"rr12":0,
-"numer_sta":"61998",
-"type_de_tendance_barometrique":"Stationnaire ou en hausse, puis en baisse, ou en baisse, puis en baisse plus rapide",
-"dd":10,
-"per":"-10",
-"tx12":"290.250000",
-"cod_tend":8,
-"pres":100900,
-"u":85,
-"rafper":"17.500000",
-"ff":12.9,
-"date":"2018-03-22T18:00:00+00:00",
-"nom":"KERGUELEN",
-"td":280.15,
-"tend":-390,
-"coordonnees":[
--49.352333,
-70.243333
-],
-"rr1":0,
-"t":282.55
-},
-"geometry":{
-"type":"Point",
-"coordinates":[
-70.243333,
--49.352333
-]
-},
-"record_timestamp":"2018-03-22T20:18:19+00:00"
-}
-],
-"facet_groups":[
-{
-"name":"date",
-"facets":[
-{
-"name":"2010",
-"path":"2010",
-"count":168513,
-"state":"displayed"
-},
-{
-"name":"2011",
-"path":"2011",
-"count":167973,
-"state":"displayed"
-},
-{
-"name":"2012",
-"path":"2012",
-"count":167077,
-"state":"displayed"
-},
-{
-"name":"2013",
-"path":"2013",
-"count":172578,
-"state":"displayed"
-},
-{
-"name":"2014",
-"path":"2014",
-"count":170065,
-"state":"displayed"
-},
-{
-"name":"2015",
-"path":"2015",
-"count":147668,
-"state":"displayed"
-},
-{
-"name":"2016",
-"path":"2016",
-"count":164269,
-"state":"displayed"
-},
-{
-"name":"2017",
-"path":"2017",
-"count":168745,
-"state":"displayed"
-},
-{
-"name":"2018",
-"path":"2018",
-"count":37871,
-"state":"displayed"
-}
-]
-},
-{
-"name":"temps_present",
-"facets":[(too many elements to preview)]
-},
-{
-"name":"nom",
-"facets":[(too many elements to preview)]
-}
-]
-}
