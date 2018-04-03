@@ -1,0 +1,221 @@
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#lat> .
+
+# ------ Definition of a resource (subject) of type weatherReport
+<#weatherReport> 
+        rml:logicalSource [ 
+                rml:iterator "$.[*].fields" ;
+                # ------ we use JSONPath to read json file
+                rml:referenceFormulation ql:JSONPath ;
+                # ------ the path to the file containing weatherReport
+                rml:source "historique-meteo.json" ] ;
+
+        # ------ Defining the type of the subject
+        rr:subjectMap [ 
+                rr:class <https://w3id.org/eepsa#WeatherReport> ;
+                # ------ Defining the URI of the subject
+                rr:template "http://miage.org/weatherReport/{date}{coordonnees[0]}{coordonnees[1]}" ];
+
+        # ------ Definition of each Predicate-Object associated with the weatherReport subject
+        rr:predicateObjectMap [ rr:objectMap [ rml:reference "$.nom" ] ;
+                # ------ URI predicate
+                rr:predicate rdf:label ];
+        
+        rr:predicateObjectMap [ rr:objectMap [ rml:reference "$.date" ] ;
+                # ------ URI predicate
+                rr:predicate xsd:date ],
+
+                         # ------ JSONPath expression to access the value
+        [ rr:objectMap [ rml:reference "$.ht_neige" ] ;
+            rr:predicate <http://purl.oclc.org/NET/ssnx/meteo/aws#SnowHeight> ],
+
+        [ rr:objectMap [ rml:reference "$.numer_sta" ] ;
+            rr:predicate <http://dbpedia.org/ontology/Station> ],
+
+        [ rr:objectMap [ rml:reference "$.etat_sol" ] ;
+            rr:predicate <http://data.ign.fr/def/topo#etatSol> ],
+
+        [ rr:objectMap [ rml:reference "$.temps_present" ] ;
+            rr:predicate <https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#CurrentWeatherReport> ],
+
+        [ rr:objectMap [ rml:reference "$.pres" ] ;
+            rr:predicate <http://purl.org/iot/vocab/m3-lite#Pressure> ],
+
+        [ rr:objectMap [ rml:reference "$.t" ] ;
+            rr:predicate <https://w3id.org/saref#Temperature> ],
+
+        [ rr:objectMap [ rml:reference "$.pmer" ] ;
+            rr:predicate <http://dbpedia.org/ontology/Sea#Pressure> ],
+        
+         [ rr:objectMap [ rml:reference "$.tn12" ] ;
+            rr:predicate <http://dbpedia.org/ontology/Galaxy/minimumTemperature#12> ],
+
+        [ rr:objectMap [ rml:reference "$.vv" ] ;
+            rr:predicate <http://online-presence.net/opo/ns#Visibility> ],
+
+        [ rr:objectMap [ rml:reference "$.rr1" ] ;
+            rr:predicate <http://purl.org/iot/vocab/m3-lite#PrecipitationSensor#1> ],
+
+        [ rr:objectMap [ rml:reference "$.rr3" ] ;
+            rr:predicate <http://purl.org/iot/vocab/m3-lite#PrecipitationSensor#3> ],
+
+        [ rr:objectMap [ rml:reference "$.rr6" ] ;
+            rr:predicate <http://purl.org/iot/vocab/m3-lite#PrecipitationSensor#6> ],
+
+        [ rr:objectMap [ rml:reference "$.rr12" ] ;
+            rr:predicate <http://purl.org/iot/vocab/m3-lite#PrecipitationSensor#12> ],
+
+        [ rr:objectMap [ rml:reference "$.rr24" ] ;
+            rr:predicate <http://purl.org/iot/vocab/m3-lite#PrecipitationSensor#24> ],
+
+        [ rr:objectMap [ rml:reference "$.tend24" ] ;
+            rr:predicate <http://purl.org/iot/vocab/m3-lite#PressureSensor#24> ],
+
+        [ rr:objectMap [ rml:reference "$.per" ] ;
+            rr:predicate <http://dati.isprambiente.it/ontology/core#measurementPeriod> ],
+
+        [ rr:objectMap [ rml:reference "$.tend" ] ;
+            rr:predicate <http://purl.org/iot/vocab/m3-lite#PressureSensor#3> ],
+
+        [ rr:objectMap [ rml:reference "$.rafper" ] ;
+            rr:predicate <http://purl.org/iot/vocab/m3-lite#WindSpeedSensor> ],
+
+        [ rr:objectMap [ rml:reference "$.td" ] ;
+            rr:predicate <http://purl.org/iot/vocab/m3-lite#DewPoint> ],
+
+        [ rr:objectMap [ rml:reference "$.nnuage1" ] ;
+            rr:predicate <http://purl.org/iot/vocab/m3-lite#CloudCoverSensor> ],
+
+        [ rr:objectMap [ rml:reference "$.type_de_tendance_barometrique" ] ;
+            rr:predicate <http://purl.org/healthcarevocab/v1#SensorTemperature> ], #PAS SUR
+
+        [ rr:objectMap [ rml:reference "$.tx12" ] ;
+            rr:predicate <https://w3id.org/saref#Temperature#12> ],
+
+        [ rr:objectMap [ rml:reference "$.tminsol" ] ;
+            rr:predicate <https://w3id.org/saref#Temperature#sol12> ],
+
+        [ rr:objectMap [ rml:reference "$.dd" ] ;
+            rr:predicate <http://purl.org/iot/vocab/m3-lite#WindDirection> ],
+
+        [ rr:objectMap [ rml:reference "$.ww" ] ; # ------ colonne avec une signification identique à celle de la colonne "temps_present" 
+            rr:predicate <https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#CurrentWeatherReport> ],
+
+        [ rr:objectMap [ rml:reference "$.cod_tend" ] ;
+            rr:predicate <http://dati.isprambiente.it/ontology/core#Barometer> ],
+
+        [ rr:objectMap [ rml:reference "$.ff" ] ;
+            rr:predicate <http://purl.org/iot/vocab/m3-lite#WindSpeed> ],
+
+        [ rr:objectMap [ rml:reference "$.hnuage1" ] ;
+            rr:predicate <http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#height> ],
+
+        [ rr:objectMap [ rml:reference "$.raf10" ] ;
+            rr:predicate <http://www.w3.org/2006/time#minutes> ],
+
+        [ rr:objectMap [ rml:reference "$.u" ] ;
+            rr:predicate <http://purl.oclc.org/NET/ssnx/cf/cf-feature#Humidity> ], 
+
+        [ rr:objectMap [ rml:reference "$.hbas" ] ;
+            rr:predicate <http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#height> ],
+
+        [ rr:objectMap [ rml:reference "$.nbas" ] ;
+            rr:predicate <http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#height> ].
+
+
+
+
+# ------ A second resource definition linked to the weatherReport resource
+<#PopulatedPlace> 
+        rml:logicalSource [ 
+                rml:iterator "$.[*].fields" ;
+                rml:referenceFormulation ql:JSONPath ;
+                rml:source "historique-meteo.json" ] ;
+
+        rr:subjectMap [ 
+                rr:class <http://dbpedia.org/ontology/PopulatedPlace> ;
+                rr:template "http://ods.dataset.com/PopulatedPlace/{nom}" ] ;
+
+        rr:predicateObjectMap [ 
+                rr:objectMap [ rml:reference "$.nom" ] ;
+                rr:predicate rdfs:label ].
+
+
+
+# ------ A third resource definition linked to the AnnualconsumptionOfEnergy resource
+<#AnnualconsumptionOfEnergy> 
+        rml:logicalSource [ 
+                rml:iterator "$.[*].fields" ;
+                rml:referenceFormulation ql:JSONPath ;
+                rml:source "consommation-annuelle.json" ] ;
+
+        # ------ Defining the type of the subject
+        rr:subjectMap [ 
+                rr:class <http://purl.org/opdm/refrigerator#consumptionOfEnergy> ;
+                # ------ Defining the URI of the subject
+                rr:template "http://miage.org/consumptionOfEnergyByIris/{iris}" ];
+        
+        # ------ Definition of each Predicate-Object associated with the weatherReport subject
+        rr:predicateObjectMap [ rr:objectMap [ rml:reference "$.iris" ] ;
+                # ------ URI predicate
+                rr:predicate rdf:label ];
+        
+        rr:predicateObjectMap [ rr:objectMap [ rml:reference "$.geo_point_iris[0]" ] ;
+                # ------ URI predicate
+                rr:predicate wgs84_pos:lat ];
+            
+        rr:predicateObjectMap [ rr:objectMap [ rml:reference "$.geo_point_iris[1]" ] ;
+                # ------ URI predicate
+                rr:predicate wgs84_pos:long ],
+
+        # ------ JSONPath expression to access the value
+        [ rr:objectMap [ rml:reference "$.departement" ] ;
+            rr:predicate <http://rdf.insee.fr/def/geo/insee-geo-onto.ttl#codeIRIS> ],
+
+        [ rr:objectMap [ rml:reference "$.commune" ] ;
+            rr:predicate <http://rdf.insee.fr/def/geo/insee-geo-onto.ttl#codeIRIS> ],
+
+        [ rr:objectMap [ rml:reference "$.code_insee_departement" ] ;
+            rr:predicate <http://rdf.insee.fr/def/geo/insee-geo-onto.ttl#codeIRIS> ],
+
+        [ rr:objectMap [ rml:reference "$.code_insee_commune" ] ;
+            rr:predicate <http://rdf.insee.fr/def/geo/insee-geo-onto.ttl#codeIRIS> ],
+
+        [ rr:objectMap [ rml:reference "$.iris" ] ;
+            rr:predicate <http://rdf.insee.fr/def/geo/insee-geo-onto.ttl#codeIRIS> ],
+
+        [ rr:objectMap [ rml:reference "$.consommation_totale" ] ;
+            rr:predicate <http://purl.org/iot/vocab/m3-lite#FuelConsumptionTotal> ],
+        
+        [ rr:objectMap [ rml:reference "$.hierarchie_geographique" ] ;
+            rr:predicate <http://purl.org/qb4olap/cubes#Hierarchy> ],
+
+        [ rr:objectMap [ rml:reference "$.pdl_gaz_tigf" ] ;
+            rr:predicate <http://dbpedia.org/ontology/deliveryPoint#Gaz> ],
+
+        [ rr:objectMap [ rml:reference "$.consommation_electricite_mwh_rte" ] ;
+            rr:predicate <http://dbpedia.org/ontology/electricityConsumption> ],
+
+        [ rr:objectMap [ rml:reference "$.pdl_electricite_rte" ] ;
+            rr:predicate <http://dbpedia.org/ontology/deliveryPoint#elec> ],
+
+        [ rr:objectMap [ rml:reference "$.pdl_gaz_grtgaz" ] ;
+            rr:predicate <http://dbpedia.org/ontology/deliveryPoint#Gaz> ],
+        
+        [ rr:objectMap [ rml:reference "$.annee" ] ;
+            rr:predicate <http://dbpedia.org/ontology/year> ],
+
+        [ rr:objectMap [ rml:reference "$.region" ] ;
+            rr:predicate <http://dbpedia.org/ontology/region> ],
+
+        [ rr:objectMap [ rml:reference "$.pdl_total" ] ;
+            rr:predicate <http://dbpedia.org/ontology/deliveryPointTotal> ],
+
+        [ rr:objectMap [ rml:reference "$.consommation_gaz_mwh_tigf" ] ;
+            rr:predicate <http://dbpedia.org/ontology/gazConsumption> ].
