@@ -93,7 +93,7 @@
             rr:predicate <http://purl.org/iot/vocab/m3-lite#CloudCoverSensor> ],
 
         [ rr:objectMap [ rml:reference "$.type_de_tendance_barometrique" ] ;
-            rr:predicate <http://purl.org/healthcarevocab/v1#SensorTemperature> ], #PAS SUR
+            rr:predicate <http://miage.com/onthology/barometricTrendType> ], 
 
         [ rr:objectMap [ rml:reference "$.tx12" ] ;
             rr:predicate <https://w3id.org/saref#Temperature#12> ],
